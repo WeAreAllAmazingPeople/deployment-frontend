@@ -12,7 +12,7 @@ export class SecretService {
   private secretUrl: string;
 
   constructor(private http: HttpClient) {
-    this.secretUrl = 'http://localhost:8080/secrets';
+    this.secretUrl = 'https://switchfully-deployment.herokuapp.com/secrets';
   }
 
   public findAll(): Observable<Secret[]> {
